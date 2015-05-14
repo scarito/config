@@ -28,4 +28,8 @@ for f in ${FILES[@]}; do
   ln -s $src $link
 done
 
-    
+echo "Installing gnome-terminal solarized theme"
+$DIR/submodule/gnome-terminal-colors-solarized/install.sh -s dark -p Default
+
+echo "Installing dircolors solarized theme"
+echo "eval \`dircolors $DIR/submodule/dircolors-solarized/dircolors.256dark\`" > "$HOME/.dircolors"
