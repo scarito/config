@@ -3,10 +3,10 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 FILES=(
-    ".i3status.conf"
-    ".i3"
     ".bashrc"
     ".emacs"
+    ".i3"
+    ".i3status.conf"
 )
 
 BACKUP_DIR="$DIR/backup"
