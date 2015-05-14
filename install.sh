@@ -11,13 +11,22 @@ FILES=(
 
 BACKUP_DIR="$DIR/backup"
 
-mkdir $BACKUP_DIR
+[ ! -r $BACKUP_DIR ] && mkdir $BACKUP_DIR
 
 echo "Backing up original configuration files:"
 for f in ${FILES[@]}; do
   src="$HOME/$f"
-  printf "  - Moving %s to %s\n" $src $BACKUP_DIR
-  mv $src $BACKUP_DIR
+  if [ -r $src ]
+  then
+    if [ ! -h $src ]
+    then
+      printf "  - Moving %s to %s\n" $src $BACKUP_DIR
+      mv $src $BACKUP_DIR
+    else
+      printf "  - Removing link %s\n" $src
+      rm $src
+    fi
+  fi
 done
 
 echo "Linking new configuration files:"

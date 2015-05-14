@@ -114,3 +114,5 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=emacs
+
+[[ -r ~/.dircolors ]] && . ~/.dircolors
