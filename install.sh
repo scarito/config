@@ -5,6 +5,7 @@ DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 FILES=(
     ".bashrc"
     ".emacs"
+    ".gitconfig"
     ".i3"
     ".i3status.conf"
 )
