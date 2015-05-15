@@ -33,15 +33,18 @@
 ; don't use tabs for indenting
 (setq-default indent-tabs-mode nil)
 
-; fill column indicator
+; display line and column numbers
 (setq column-number-mode t)
-(require 'fill-column-indicator)
-;(setq fci-mode t)
-(setq fci-rule-width 1)
-(setq fci-rule-color "darkgray")
+(global-linum-mode t)
 
-(make-variable-buffer-local 'line-move-visual)
-(defadvice previous-line (around avoid-jumpy-fci activate)
-  (if (and (symbol-value 'fci-mode) (> (count-lines 1 (point)) 0))
-      (prog (fci-mode -1) ad-do-it (fci-mode 1))
-    ad-do-it))
+; fill column indicator
+;(require 'fill-column-indicator)
+;(setq fci-mode t)
+;(setq fci-rule-width 1)
+;(setq fci-rule-color "darkgray")
+
+;(make-variable-buffer-local 'line-move-visual)
+;(defadvice previous-line (around avoid-jumpy-fci activate)
+;  (if (and (symbol-value 'fci-mode) (> (count-lines 1 (point)) 0))
+;      (prog (fci-mode -1) ad-do-it (fci-mode 1))
+;    ad-do-it))
