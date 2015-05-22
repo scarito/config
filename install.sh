@@ -43,3 +43,6 @@ $DIR/submodule/gnome-terminal-colors-solarized/install.sh -s dark -p Default
 
 echo "Installing dircolors solarized theme"
 echo "eval \`dircolors $DIR/submodule/dircolors-solarized/dircolors.256dark\`" > "$HOME/.dircolors"
+
+echo "Installing emacs rainbow-delimiters"
+ln -s $DIR/submodule/rainbow-delimiters/rainbow-delimiters.el $HOME/.emacs.d/rainbow-delimiters.el

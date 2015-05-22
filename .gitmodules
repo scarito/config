@@ -4,3 +4,9 @@
 [submodule "submodule/dircolors-solarized"]
 	path = submodule/dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized
+[submodule "rainbow-delimiters"]
+	path = rainbow-delimiters
+	url = https://github.com/jlr/rainbow-delimiters.git
+[submodule "submodule/rainbow-delimiters"]
+	path = submodule/rainbow-delimiters
+	url = https://github.com/jlr/rainbow-delimiters.git
