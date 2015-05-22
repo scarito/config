@@ -65,3 +65,6 @@
 ;  (if (and (symbol-value 'fci-mode) (> (count-lines 1 (point)) 0))
 ;      (prog (fci-mode -1) ad-do-it (fci-mode 1))
 ;    ad-do-it))
+
+; disable background
+(global-unset-key (kbd "C-z"))
