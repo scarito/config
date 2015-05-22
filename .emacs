@@ -51,10 +51,14 @@
 (global-linum-mode t)
 
 ; fill column indicator
-;(require 'fill-column-indicator)
-;(setq fci-mode t)
-;(setq fci-rule-width 1)
-;(setq fci-rule-color "darkgray")
+(require 'fill-column-indicator)
+(setq fci-mode t)
+(setq fci-rule-width 1)
+(setq fci-rule-color "darkgray")
+(setq fci-rule-column 80)
+(add-hook 'c-mode-hook 'fci-mode)
+(add-hook 'c++-mode-hook 'fci-mode)
+(add-hook 'python-mode-hook 'fci-mode)
 
 ;(make-variable-buffer-local 'line-move-visual)
 ;(defadvice previous-line (around avoid-jumpy-fci activate)

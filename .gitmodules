@@ -10,3 +10,6 @@
 [submodule "submodule/rainbow-delimiters"]
 	path = submodule/rainbow-delimiters
 	url = https://github.com/jlr/rainbow-delimiters.git
+[submodule "submodule/Fill-Column-Indicator"]
+	path = submodule/Fill-Column-Indicator
+	url = https://github.com/alpaker/Fill-Column-Indicator.git
