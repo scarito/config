@@ -3,11 +3,11 @@
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 FILES_HOMEDIR=(
-    ".bashrc"
-    ".emacs"
-    ".gitconfig"
-    ".i3"
-    ".i3status.conf"
+  ".bashrc"
+  ".emacs"
+  ".gitconfig"
+  ".i3"
+  ".i3status.conf"
 )
 
 FILES_SRC[0]="submodule/rainbow-delimiters/rainbow-delimiters.el"
