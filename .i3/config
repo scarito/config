@@ -155,3 +155,4 @@ bar {
 }
 
 exec /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+exec-always /usr/bin/nm-applet
