@@ -66,5 +66,17 @@
 ;      (prog (fci-mode -1) ad-do-it (fci-mode 1))
 ;    ad-do-it))
 
+; set window width
+(defun set-window-width (n)
+  "Set the selected window's width."
+  (adjust-window-trailing-edge (selected-window) (- n (window-width)) t))
+
+(defun set-80-columns ()
+  "Set the selected window to 80 columns."
+  (interactive)
+  (set-window-width 84))  ; hack to ensure enough space with line numbers.
+
+(global-set-key "\C-x~" 'set-80-columns)
+
 ; disable background
 (global-unset-key (kbd "C-z"))
