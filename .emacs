@@ -30,7 +30,7 @@
  )
 
 (load-theme 'sanityinc-solarized-dark)
-(set-default-font "Ubuntu Mono-10")
+(set-default-font "Ubuntu Mono-12")
 
 ; don't use tabs for indenting
 (setq-default indent-tabs-mode nil)
