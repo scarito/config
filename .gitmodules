@@ -13,3 +13,6 @@
 [submodule "submodule/Fill-Column-Indicator"]
 	path = submodule/Fill-Column-Indicator
 	url = https://github.com/alpaker/Fill-Column-Indicator.git
+[submodule "submodule/py3status"]
+	path = submodule/py3status
+	url = http://github.com/ultrabug/py3status.git

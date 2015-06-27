@@ -8,7 +8,6 @@ FILES_HOMEDIR=(
   ".emacs"
   ".gitconfig"
   ".i3"
-  ".i3status.conf"
 )
 
 FILES_SRC[0]="submodule/rainbow-delimiters/rainbow-delimiters.el"
