@@ -88,3 +88,6 @@
 
 ; disable background
 (global-unset-key (kbd "C-z"))
+
+; C mode settings
+(c-set-offset 'case-label '+)
