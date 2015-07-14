@@ -16,8 +16,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=1000000
+HISTFILESIZE=100000000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -161,3 +161,9 @@ export GIT_PS1_SHOWCOLORHINTS="true"
 PROMPT_BEFORE="\001$txtcyn\002\u@\h \001$txtwht\002\w\001$txtrst\002"
 PROMPT_AFTER=" \\\$ "
 PROMPT_COMMAND='__git_ps1 "$PROMPT_BEFORE" "$PROMPT_AFTER"'
+
+# history keybindings
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\e[C": forward-char'
+bind '"\e[D": backward-char'
