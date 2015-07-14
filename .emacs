@@ -78,5 +78,13 @@
 
 (global-set-key "\C-x~" 'set-80-columns)
 
+; trailing whitespace
+; includes fci mode compatibility hack from https://github.com/alpaker/Fill-Column-Indicator/issues/10
+(require 'whitespace)
+(setq-default whitespace-style '(face trailing))
+(setq-default whitepace-line-column 80)
+(global-whitespace-mode 1)
+(setq-default show-trailing-whitespace t)
+
 ; disable background
 (global-unset-key (kbd "C-z"))
