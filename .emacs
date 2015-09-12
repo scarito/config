@@ -89,5 +89,12 @@
 ; disable background
 (global-unset-key (kbd "C-z"))
 
+; buffer naming
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'reverse)
+
+; focus follows mouse
+(setq mouse-autoselect-window t)
+
 ; C mode settings
 (c-set-offset 'case-label '+)
