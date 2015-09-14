@@ -98,3 +98,4 @@
 
 ; C mode settings
 (c-set-offset 'case-label '+)
+(setq-default c-continued-statement-offset 4)
