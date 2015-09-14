@@ -60,12 +60,6 @@
 (add-hook 'c++-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'fci-mode)
 
-;(make-variable-buffer-local 'line-move-visual)
-;(defadvice previous-line (around avoid-jumpy-fci activate)
-;  (if (and (symbol-value 'fci-mode) (> (count-lines 1 (point)) 0))
-;      (prog (fci-mode -1) ad-do-it (fci-mode 1))
-;    ad-do-it))
-
 ; set window width
 (defun set-window-width (n)
   "Set the selected window's width."
