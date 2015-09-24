@@ -1,1 +1,10 @@
 export IBUS_ENABLE_SYNC_MODE=1
+
+# Trackpad settings for X1
+synclient FingerLow=30
+synclient FingerHigh=40
+synclient MaxTapMove=100
+synclient MaxTapTime=100
+synclient HorizHysteresis=40
+synclient VertHysteresis=40
+synclient TapAndDragGesture=1
