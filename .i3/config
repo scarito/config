@@ -154,6 +154,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bindsym $mod+Shift+i exec "i3-input"
+
 #lock screen
 bindsym Control+Mod1+l exec "gnome-screensaver-command -l"
 #suspend
