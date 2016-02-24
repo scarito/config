@@ -8,3 +8,5 @@ synclient MaxTapTime=100
 synclient HorizHysteresis=40
 synclient VertHysteresis=40
 synclient TapAndDragGesture=1
+synclient RightButtonAreaLeft=0
+synclient RightButtonAreaTop=0
