@@ -59,6 +59,7 @@
 (add-hook 'c-mode-hook 'fci-mode)
 (add-hook 'c++-mode-hook 'fci-mode)
 (add-hook 'python-mode-hook 'fci-mode)
+(setq-default fill-column 80)
 
 ; set window width
 (defun set-window-width (n)
