@@ -19,6 +19,7 @@
 	untracked = cyan
 [alias]
 	st = status -sb
+	sh = show
 	ci = commit
 	br = branch
 	co = checkout
@@ -27,3 +28,4 @@
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s -- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
 	lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s -- %an %Cgreen(%cr)%Creset' --abbrev-commit --date=relative --all
         dfs = diff --stat --summary
+	shs = show --stat --summary
